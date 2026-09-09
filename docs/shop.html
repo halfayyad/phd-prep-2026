@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cédrisse — Cosmetics for Real Skin</title>
-<meta name="description" content="Cédrisse makes lip, eye, face and skin products in a full range of depths and undertones. Cruelty-free, fragrance-free, made to wear all day.">
-<link rel="canonical" href="https://www.cedrisse.com/">
+<title>Shop All — Cédrisse</title>
+<meta name="description" content="Every Cédrisse product: lip, eye, face and skin cosmetics in a full range of depths and undertones.">
+<link rel="canonical" href="https://www.cedrisse.com/shop.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cédrisse — Cosmetics for Real Skin">
-<meta property="og:description" content="Lip, eye, face and skin products in a full range of depths and undertones.">
+<meta property="og:title" content="Shop All — Cédrisse">
+<meta property="og:description" content="Every Cédrisse product: lip, eye, face and skin cosmetics in a full range of depths and undertones.">
 <meta property="og:image" content="https://www.cedrisse.com/assets/img/og-cover.svg">
 <meta name="theme-color" content="#FBF8F5">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -33,7 +33,7 @@
     </button>
     <nav class="nav__menu" id="nav-menu" aria-label="Primary">
       <ul class="nav__links">
-        <li><a href="shop.html">Shop all</a></li>
+        <li><a href="shop.html" aria-current="page">Shop all</a></li>
         <li><a href="shop.html?c=lips">Lips</a></li>
         <li><a href="shop.html?c=eyes">Eyes</a></li>
         <li><a href="shop.html?c=face">Face</a></li>
@@ -50,77 +50,27 @@
 
 <main id="main">
 
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="reveal">
-        <span class="eyebrow">New season · Full shade range</span>
-        <h1 class="hero__title">Colour that behaves<br><em>like skin</em></h1>
-        <p class="lede">
-          Cédrisse makes a short, considered range of cosmetics — the products you
-          actually reach for, formulated to sit in the skin rather than on it, in
-          depths and undertones that go all the way.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="shop.html">Shop all products</a>
-          <a class="btn btn--ghost" href="#bestsellers">Bestsellers</a>
-        </div>
-      </div>
-      <div class="hero__media reveal" data-delay="120">
-        <img src="assets/img/hero.svg" alt="Cédrisse lipstick, skin tint and blush" width="1000" height="1250">
-      </div>
+  <section class="page-head">
+    <div class="wrap wrap--narrow">
+      <span class="eyebrow">Shop</span>
+      <hr class="rule rule--center">
+      <h1 class="title--sm">The whole range</h1>
+      <p class="lede">Twelve products. Nothing here to fill out a shelf.</p>
     </div>
   </section>
-
-  <div class="strip">
-    <div class="wrap strip__inner">
-      <span>Cruelty-free</span>
-      <span>Dermatologist tested</span>
-      <span>20 skin tint shades</span>
-      <span>Free shipping over $60</span>
-    </div>
-  </div>
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">Shop by category</span>
-        <hr class="rule">
-        <h2>Four things, done properly</h2>
+      <div class="filters" role="group" aria-label="Filter products by category">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter="lips" aria-pressed="false">Lips</button>
+        <button class="filter" type="button" data-filter="eyes" aria-pressed="false">Eyes</button>
+        <button class="filter" type="button" data-filter="face" aria-pressed="false">Face</button>
+        <button class="filter" type="button" data-filter="skin" aria-pressed="false">Skin</button>
       </div>
-      <div class="cats">
-        <a class="cat reveal" href="shop.html?c=lips">
-          <h3>Lips</h3>
-          <p>Colour that wears like skin — matte, balm and oil.</p>
-          <span class="cat__go">Shop lips →</span>
-        </a>
-        <a class="cat reveal" data-delay="70" href="shop.html?c=eyes">
-          <h3>Eyes</h3>
-          <p>Brows, lashes and shadow built for depth, not glitter.</p>
-          <span class="cat__go">Shop eyes →</span>
-        </a>
-        <a class="cat reveal" data-delay="140" href="shop.html?c=face">
-          <h3>Face</h3>
-          <p>Skin tints, blush and bronzer in a full depth range.</p>
-          <span class="cat__go">Shop face →</span>
-        </a>
-        <a class="cat reveal" data-delay="210" href="shop.html?c=skin">
-          <h3>Skin</h3>
-          <p>The prep and the take-off. Makeup starts and ends here.</p>
-          <span class="cat__go">Shop skin →</span>
-        </a>
-      </div>
-    </div>
-  </section>
+      <p class="result-count" data-result-count aria-live="polite"></p>
 
-  <section class="section section--tint" id="bestsellers">
-    <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">Most loved</span>
-        <hr class="rule">
-        <h2>Bestsellers</h2>
-        <p class="lede">The products people come back for.</p>
-      </div>
-      <div class="products">
+      <div class="products" data-products>
       <!-- PRODUCTS:START -->
       <a class="product-card reveal" href="shop/velvet-matte-lipstick.html" data-category="lips">
       <span class="product-card__media">
@@ -149,6 +99,19 @@
         </span>
       </span>
     </a>
+      <a class="product-card reveal" href="shop/precision-lip-liner.html" data-category="lips">
+      <span class="product-card__media">
+        <img src="assets/img/products/precision-lip-liner.svg" alt="Precision Lip Liner" width="1000" height="1250" loading="lazy">
+      </span>
+      <span class="product-card__body">
+        <span class="product-card__name">Precision Lip Liner</span>
+        <span class="product-card__tagline">Lips · A 1.5 mm tip that never needs sharpening.</span>
+        <span class="product-card__foot">
+          <span class="product-card__price">$18</span>
+          <span class="product-card__shades"><span class="swatch" style="background:#C48C7C"></span><span class="swatch" style="background:#B26A66"></span><span class="swatch" style="background:#A65442"></span><span class="swatch" style="background:#9B2B27"></span><span class="swatch" style="background:#7A4A3C"></span></span>
+        </span>
+      </span>
+    </a>
       <a class="product-card reveal" href="shop/the-nine-palette.html" data-category="eyes">
       <span class="product-card__media">
         <span class="product-card__badge">New</span>
@@ -160,6 +123,19 @@
         <span class="product-card__foot">
           <span class="product-card__price">$46</span>
           <span class="product-card__shades"><span class="swatch" style="background:#C9A88C"></span><span class="swatch" style="background:#9C8B85"></span><span class="swatch" style="background:#6B4429"></span></span>
+        </span>
+      </span>
+    </a>
+      <a class="product-card reveal" href="shop/feather-brow-pencil.html" data-category="eyes">
+      <span class="product-card__media">
+        <img src="assets/img/products/feather-brow-pencil.svg" alt="Feather Brow Pencil" width="1000" height="1250" loading="lazy">
+      </span>
+      <span class="product-card__body">
+        <span class="product-card__name">Feather Brow Pencil</span>
+        <span class="product-card__tagline">Eyes · Draws hairs, not lines.</span>
+        <span class="product-card__foot">
+          <span class="product-card__price">$20</span>
+          <span class="product-card__shades"><span class="swatch" style="background:#A98F72"></span><span class="swatch" style="background:#8B6A4F"></span><span class="swatch" style="background:#5D4332"></span><span class="swatch" style="background:#332822"></span></span>
         </span>
       </span>
     </a>
@@ -204,6 +180,44 @@
         </span>
       </span>
     </a>
+      <a class="product-card reveal" href="shop/soft-focus-powder.html" data-category="face">
+      <span class="product-card__media">
+        <img src="assets/img/products/soft-focus-powder.svg" alt="Soft Focus Setting Powder" width="1000" height="1250" loading="lazy">
+      </span>
+      <span class="product-card__body">
+        <span class="product-card__name">Soft Focus Setting Powder</span>
+        <span class="product-card__tagline">Face · Sets without flattening.</span>
+        <span class="product-card__foot">
+          <span class="product-card__price">$32</span>
+          <span class="product-card__shades"><span class="swatch" style="background:#EFDDCB"></span><span class="swatch" style="background:#D6B896"></span><span class="swatch" style="background:#A9784F"></span></span>
+        </span>
+      </span>
+    </a>
+      <a class="product-card reveal" href="shop/sunlit-cream-bronzer.html" data-category="face">
+      <span class="product-card__media">
+        <img src="assets/img/products/sunlit-cream-bronzer.svg" alt="Sunlit Cream Bronzer" width="1000" height="1250" loading="lazy">
+      </span>
+      <span class="product-card__body">
+        <span class="product-card__name">Sunlit Cream Bronzer</span>
+        <span class="product-card__tagline">Face · Warmth, not mud.</span>
+        <span class="product-card__foot">
+          <span class="product-card__price">$30</span>
+          <span class="product-card__shades"><span class="swatch" style="background:#C79A72"></span><span class="swatch" style="background:#AF7C52"></span><span class="swatch" style="background:#8F5F3A"></span><span class="swatch" style="background:#6B432A"></span></span>
+        </span>
+      </span>
+    </a>
+      <a class="product-card reveal" href="shop/prep-hydrating-primer.html" data-category="skin">
+      <span class="product-card__media">
+        <img src="assets/img/products/prep-hydrating-primer.svg" alt="Prep Hydrating Primer" width="1000" height="1250" loading="lazy">
+      </span>
+      <span class="product-card__body">
+        <span class="product-card__name">Prep Hydrating Primer</span>
+        <span class="product-card__tagline">Skin · The step that makes everything else work.</span>
+        <span class="product-card__foot">
+          <span class="product-card__price">$34</span>
+        </span>
+      </span>
+    </a>
       <a class="product-card reveal" href="shop/melt-cleansing-balm.html" data-category="skin">
       <span class="product-card__media">
         <span class="product-card__badge">New</span>
@@ -219,124 +233,18 @@
     </a>
       <!-- PRODUCTS:END -->
       </div>
-      <div class="btn-row btn-row--center">
-        <a class="btn btn--ghost" href="shop.html">Shop the full range</a>
-      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap split">
-      <div class="split__media reveal">
-        <img src="assets/img/about.svg" alt="Cédrisse cleansing balm, lip oil and brow pencil" width="900" height="1100">
-      </div>
-      <div class="reveal" data-delay="100">
-        <span class="eyebrow">The shade range</span>
-        <hr class="rule">
-        <h2>Twenty shades, matched properly</h2>
-        <p>
-          Most ranges get thin at both ends. Ours doesn't. The Weightless Skin Tint runs
-          twenty shades across cool, neutral and warm undertones, developed on real
-          skin at every depth rather than extrapolated from the middle.
-        </p>
-        <p>
-          Blush, bronzer and setting powder follow the same rule — no shade exists to
-          fill out a chart.
-        </p>
-        <div class="range" aria-hidden="true">
-          <span style="background:#F0D9C6"></span><span style="background:#E8C9AF"></span>
-          <span style="background:#DFBFA0"></span><span style="background:#D9B392"></span>
-          <span style="background:#CFA681"></span><span style="background:#C79A70"></span>
-          <span style="background:#BC8A61"></span><span style="background:#B07E52"></span>
-          <span style="background:#A06F47"></span><span style="background:#8E5F3B"></span>
-          <span style="background:#7D5333"></span><span style="background:#6D452B"></span>
-          <span style="background:#5C3924"></span><span style="background:#4A2E1D"></span>
-        </div>
-        <div class="btn-row">
-          <a class="btn" href="shop/weightless-skin-tint.html">Shop the skin tint</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--blush">
+  <section class="section section--tint cta-band">
     <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">How we make things</span>
-        <hr class="rule">
-        <h2>Three standards, no exceptions</h2>
-      </div>
-      <div class="grid grid--3">
-        <div class="value reveal">
-          <h3>Never tested on animals</h3>
-          <p>Cruelty-free at every stage, including our suppliers, and we don't sell into markets that require animal testing.</p>
-        </div>
-        <div class="value reveal" data-delay="80">
-          <h3>Fragrance-free by default</h3>
-          <p>Nothing is perfumed to mask a formula. Full ingredient lists sit on every product page, not hidden on the box.</p>
-        </div>
-        <div class="value reveal" data-delay="160">
-          <h3>A short range, kept</h3>
-          <p>Twelve products, not two hundred. We'd rather reformulate something good than launch something new every month.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= Reviews =================
-       PLACEHOLDER CONTENT — replace with real, permitted customer reviews
-       before launch. See README.md.
-  ============================================== -->
-  <section class="section section--ink">
-    <div class="wrap quotes" data-quotes>
-      <div class="section-head center">
-        <span class="eyebrow">From customers</span>
-        <hr class="rule">
-      </div>
-      <div class="quote is-active">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“First skin tint that actually matched me instead of going grey by lunchtime.”</blockquote>
-        <cite>Sample review<span>Weightless Skin Tint · Placeholder</span></cite>
-      </div>
-      <div class="quote">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“A matte lipstick I can wear for eight hours without thinking about my lips once.”</blockquote>
-        <cite>Sample review<span>Velvet Matte Lipstick · Placeholder</span></cite>
-      </div>
-      <div class="quote">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“The palette has no wasted pans. Every single shade earns its place.”</blockquote>
-        <cite>Sample review<span>The Nine Palette · Placeholder</span></cite>
-      </div>
-      <div class="quote-nav" role="tablist" aria-label="Customer reviews"></div>
-    </div>
-  </section>
-
-  <section class="section cta-band">
-    <div class="wrap">
-      <span class="eyebrow">Stay in touch</span>
+      <span class="eyebrow">Not sure where to start?</span>
       <hr class="rule">
-      <h2>New shades, first</h2>
-      <p class="lede">Restocks, new products and the occasional shade-matching guide. No more than twice a month.</p>
-      <form class="form newsletter mt-lg" data-form data-demo="true"
-            data-demo-message="Thank you — you're on the list. (Connect an email provider to start collecting real sign-ups.)"
-            action="#" method="post" novalidate>
-        <p class="form-status" role="status" tabindex="-1" hidden></p>
-        <div class="form__row">
-          <div class="field">
-            <label for="news-email">Email address</label>
-            <input id="news-email" name="email" type="email" autocomplete="email" required>
-            <span class="error" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <button class="btn" type="submit">Sign up</button>
-          </div>
-        </div>
-        <div class="hp" aria-hidden="true">
-          <label for="news-company">Company</label>
-          <input class="hp" id="news-company" name="company" type="text" tabindex="-1" autocomplete="off">
-        </div>
-      </form>
+      <h2>We'll help you match</h2>
+      <p class="lede">Send a photo in daylight and we'll recommend a skin tint shade before you buy.</p>
+      <div class="btn-row">
+        <a class="btn" href="contact.html">Ask for a shade match</a>
+      </div>
     </div>
   </section>
 

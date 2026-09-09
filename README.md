@@ -1,10 +1,13 @@
 # phd-prep-2026
 PhD preparation work — supply chain optimization research
 
-## Cédrisse Beauty website
+## Cédrisse storefront
 
-This repository also hosts the static marketing site for **Cédrisse Beauty**
-(bridal, event and editorial makeup artistry) under [`docs/`](docs/). It is plain
-HTML/CSS/JS with no build step — see [`docs/README.md`](docs/README.md) for how to
-run it locally, what placeholder content to replace, and how to deploy it via
-GitHub Pages.
+This repository also hosts the static storefront for **Cédrisse** cosmetics
+(www.cedrisse.com) under [`docs/`](docs/). It is plain HTML/CSS/JS with a small
+Python generator that builds product pages from `docs/data/products.json` — see
+[`docs/README.md`](docs/README.md) for how to edit the catalogue, connect
+Shopify, and deploy.
+
+Intended to move to its own repository; it lives here only because this is the
+repository the session had access to.

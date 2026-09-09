@@ -1,6 +1,6 @@
 /* ==========================================================================
-   CÉDRISSE BEAUTY — site behaviour
-   Every module is optional: each one bails out if its markup isn't on the page.
+   CÉDRISSE — site behaviour
+   Each module bails out if its markup isn't on the page.
    ========================================================================== */
 (function () {
   'use strict';
@@ -15,9 +15,7 @@
   /* ---------- Header shadow on scroll ---------- */
   var header = document.querySelector('.site-header');
   if (header) {
-    var onScroll = function () {
-      header.classList.toggle('is-stuck', window.scrollY > 8);
-    };
+    var onScroll = function () { header.classList.toggle('is-stuck', window.scrollY > 8); };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
@@ -34,16 +32,9 @@
     toggle.addEventListener('click', function () {
       setMenu(toggle.getAttribute('aria-expanded') !== 'true');
     });
-    menu.addEventListener('click', function (e) {
-      if (e.target.closest('a')) setMenu(false);
-    });
-    window.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') setMenu(false);
-    });
-    // Reset when resizing back to desktop so the drawer can't stay latched open.
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 880) setMenu(false);
-    });
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+    window.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 900) setMenu(false); });
   }
 
   /* ---------- Scroll reveal ---------- */
@@ -56,8 +47,7 @@
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
           var el = entry.target;
-          var delay = Number(el.dataset.delay || 0);
-          window.setTimeout(function () { el.classList.add('is-visible'); }, delay);
+          window.setTimeout(function () { el.classList.add('is-visible'); }, Number(el.dataset.delay || 0));
           observer.unobserve(el);
         });
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
@@ -65,7 +55,7 @@
     }
   }
 
-  /* ---------- Accordion (FAQ) ---------- */
+  /* ---------- Accordions ---------- */
   document.querySelectorAll('.accordion').forEach(function (accordion) {
     accordion.querySelectorAll('.accordion__btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -83,21 +73,19 @@
     });
   });
 
-  /* ---------- Testimonial rotator ---------- */
+  /* ---------- Review rotator ---------- */
   document.querySelectorAll('[data-quotes]').forEach(function (root) {
     var quotes = Array.prototype.slice.call(root.querySelectorAll('.quote'));
     var nav = root.querySelector('.quote-nav');
     if (quotes.length < 2 || !nav) return;
 
-    var index = 0;
-    var timer = null;
-
+    var index = 0, timer = null;
     quotes.forEach(function (_, i) {
       var dot = document.createElement('button');
       dot.type = 'button';
       dot.setAttribute('role', 'tab');
       dot.setAttribute('aria-selected', String(i === 0));
-      dot.setAttribute('aria-label', 'Show testimonial ' + (i + 1));
+      dot.setAttribute('aria-label', 'Show review ' + (i + 1));
       dot.addEventListener('click', function () { show(i); restart(); });
       nav.appendChild(dot);
     });
@@ -113,110 +101,86 @@
       window.clearInterval(timer);
       timer = window.setInterval(function () { show(index + 1); }, 7000);
     }
-    show(0);
-    restart();
+    show(0); restart();
     root.addEventListener('mouseenter', function () { window.clearInterval(timer); });
     root.addEventListener('mouseleave', restart);
     root.addEventListener('focusin', function () { window.clearInterval(timer); });
   });
 
-  /* ---------- Portfolio filter ---------- */
-  var gallery = document.querySelector('[data-gallery]');
+  /* ---------- Shop category filter ---------- */
+  var grid = document.querySelector('[data-products]');
   var filters = document.querySelectorAll('[data-filter]');
-  if (gallery && filters.length) {
+  if (grid && filters.length) {
+    var count = document.querySelector('[data-result-count]');
+
+    var apply = function (value, push) {
+      filters.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === value)); });
+      var shown = 0;
+      grid.querySelectorAll('.product-card').forEach(function (card) {
+        var match = value === 'all' || card.dataset.category === value;
+        card.hidden = !match;
+        if (match) shown++;
+      });
+      if (count) {
+        count.textContent = shown + (shown === 1 ? ' product' : ' products');
+      }
+      if (push) {
+        var url = value === 'all' ? location.pathname : location.pathname + '?c=' + value;
+        history.replaceState(null, '', url);
+      }
+    };
+
     filters.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var value = btn.dataset.filter;
-        filters.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
-        gallery.querySelectorAll('.gallery__item').forEach(function (item) {
-          item.hidden = value !== 'all' && item.dataset.category !== value;
-        });
+      btn.addEventListener('click', function () { apply(btn.dataset.filter, true); });
+    });
+
+    // Deep links from the home page category tiles: shop.html?c=lips
+    var initial = new URLSearchParams(location.search).get('c');
+    var known = Array.prototype.some.call(filters, function (b) { return b.dataset.filter === initial; });
+    apply(known ? initial : 'all', false);
+  }
+
+  /* ---------- Product page: shade picker ---------- */
+  var shadeList = document.querySelector('[data-shades]');
+  if (shadeList) {
+    var label = document.querySelector('[data-shade-name]');
+    shadeList.addEventListener('click', function (e) {
+      var btn = e.target.closest('.shade-btn');
+      if (!btn) return;
+      shadeList.querySelectorAll('.shade-btn').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
       });
+      var name = btn.dataset.shade;
+      if (label) label.textContent = name;
+      // The buy button listens for this so an email order carries the shade.
+      document.dispatchEvent(new CustomEvent('cedrisse:shade', { detail: { shade: name } }));
     });
   }
 
-  /* ---------- Lightbox ---------- */
-  var lightbox = document.querySelector('.lightbox');
-  if (lightbox && gallery) {
-    var lbImage = lightbox.querySelector('img');
-    var lbCaption = lightbox.querySelector('.lightbox__caption');
-    var lastFocused = null;
-    var current = 0;
+  /* ---------- Product page: quantity ---------- */
+  document.querySelectorAll('[data-qty]').forEach(function (root) {
+    var input = root.querySelector('input');
+    root.addEventListener('click', function (e) {
+      var step = e.target.closest('[data-step]');
+      if (!step || !input) return;
+      var next = Number(input.value || 1) + Number(step.dataset.step);
+      input.value = Math.min(Math.max(next, Number(input.min || 1)), Number(input.max || 99));
+    });
+  });
 
-    function visibleItems() {
-      return Array.prototype.slice.call(gallery.querySelectorAll('.gallery__item')).filter(function (i) {
-        return !i.hidden;
-      });
-    }
-    function render(i) {
-      var items = visibleItems();
-      if (!items.length) return;
-      current = (i + items.length) % items.length;
-      var item = items[current];
-      var img = item.querySelector('img');
-      lbImage.src = img.getAttribute('src');
-      lbImage.alt = img.getAttribute('alt') || '';
-      lbCaption.textContent = (item.dataset.caption || '') +
-        ' — ' + (current + 1) + ' / ' + items.length;
-    }
-    function open(i) {
-      lastFocused = document.activeElement;
-      render(i);
-      lightbox.classList.add('is-open');
-      lightbox.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('is-locked');
-      lightbox.querySelector('.lightbox__close').focus();
-    }
-    function close() {
-      lightbox.classList.remove('is-open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('is-locked');
-      if (lastFocused) lastFocused.focus();
-    }
-
-    gallery.addEventListener('click', function (e) {
-      var item = e.target.closest('.gallery__item');
-      if (!item || item.classList.contains('gallery__item--static')) return;
-      open(visibleItems().indexOf(item));
-    });
-    gallery.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter' && e.key !== ' ') return;
-      var item = e.target.closest('.gallery__item');
-      if (!item || item.classList.contains('gallery__item--static')) return;
-      e.preventDefault();
-      open(visibleItems().indexOf(item));
-    });
-    lightbox.addEventListener('click', function (e) {
-      if (e.target === lightbox) close();
-      if (e.target.closest('.lightbox__close')) close();
-      if (e.target.closest('.lightbox__btn--next')) render(current + 1);
-      if (e.target.closest('.lightbox__btn--prev')) render(current - 1);
-    });
-    window.addEventListener('keydown', function (e) {
-      if (!lightbox.classList.contains('is-open')) return;
-      if (e.key === 'Escape') close();
-      if (e.key === 'ArrowRight') render(current + 1);
-      if (e.key === 'ArrowLeft') render(current - 1);
-    });
-  }
-
-  /* ---------- Contact form ---------- */
-  var form = document.querySelector('[data-form]');
-  if (form) {
+  /* ---------- Forms (contact + newsletter) ---------- */
+  document.querySelectorAll('[data-form]').forEach(function (form) {
     var status = form.querySelector('.form-status');
 
     function fieldError(input, message) {
-      var slot = input.closest('.field').querySelector('.error');
+      var slot = input.closest('.field') && input.closest('.field').querySelector('.error');
       if (slot) slot.textContent = message || '';
       input.setAttribute('aria-invalid', message ? 'true' : 'false');
     }
 
     function validate(input) {
       var value = input.value.trim();
-      if (input.required && !value) {
-        fieldError(input, 'This field is required.');
-        return false;
-      }
+      if (input.required && !value) { fieldError(input, 'This field is required.'); return false; }
       if (input.type === 'email' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)) {
         fieldError(input, 'Please enter a valid email address.');
         return false;
@@ -225,8 +189,12 @@
       return true;
     }
 
-    form.querySelectorAll('input, select, textarea').forEach(function (input) {
-      if (input.classList.contains('hp')) return;
+    var fields = function () {
+      return Array.prototype.slice.call(form.querySelectorAll('input, select, textarea'))
+        .filter(function (i) { return !i.classList.contains('hp'); });
+    };
+
+    fields().forEach(function (input) {
       input.addEventListener('blur', function () { validate(input); });
       input.addEventListener('input', function () {
         if (input.getAttribute('aria-invalid') === 'true') validate(input);
@@ -235,36 +203,27 @@
 
     form.addEventListener('submit', function (e) {
       var honeypot = form.querySelector('input.hp');
-      if (honeypot && honeypot.value) {
-        e.preventDefault();
-        return;
-      }
+      if (honeypot && honeypot.value) { e.preventDefault(); return; }
 
-      var fields = Array.prototype.slice.call(form.querySelectorAll('input, select, textarea'))
-        .filter(function (i) { return !i.classList.contains('hp'); });
-      var valid = fields.map(validate).every(Boolean);
-
-      if (!valid) {
+      if (!fields().map(validate).every(Boolean)) {
         e.preventDefault();
         var firstBad = form.querySelector('[aria-invalid="true"]');
         if (firstBad) firstBad.focus();
         return;
       }
 
-      // No form endpoint configured yet — show a friendly confirmation instead of
-      // posting to the placeholder action. Remove this block once the real
-      // endpoint is set in the form's `action` attribute (see docs/README.md).
+      // No endpoint wired up yet — confirm locally instead of posting to the
+      // placeholder action. Remove data-demo once `action` is a real endpoint.
       if (form.dataset.demo === 'true') {
         e.preventDefault();
         if (status) {
           status.hidden = false;
-          status.textContent =
-            'Thank you — your enquiry has been noted. (This demo form is not yet connected to an inbox; ' +
-            'connect a form endpoint to start receiving messages.)';
+          status.textContent = form.dataset.demoMessage ||
+            'Thank you — this form is not connected to an inbox yet.';
           status.focus();
         }
         form.reset();
       }
     });
-  }
+  });
 })();

@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.cedrisse.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.cedrisse.com/services.html</loc><priority>0.9</priority></url>
-  <url><loc>https://www.cedrisse.com/portfolio.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.cedrisse.com/about.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.cedrisse.com/contact.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.cedrisse.com/</loc></url>
+  <url><loc>https://www.cedrisse.com/shop.html</loc></url>
+  <url><loc>https://www.cedrisse.com/about.html</loc></url>
+  <url><loc>https://www.cedrisse.com/contact.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/velvet-matte-lipstick.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/glass-lip-oil.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/precision-lip-liner.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/the-nine-palette.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/feather-brow-pencil.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/lift-and-length-mascara.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/weightless-skin-tint.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/cloud-cream-blush.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/soft-focus-powder.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/sunlit-cream-bronzer.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/prep-hydrating-primer.html</loc></url>
+  <url><loc>https://www.cedrisse.com/shop/melt-cleansing-balm.html</loc></url>
 </urlset>

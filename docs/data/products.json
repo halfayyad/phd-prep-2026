@@ -1,0 +1,271 @@
+{
+  "currency": "USD",
+  "freeShippingThreshold": 60,
+  "categories": [
+    { "slug": "lips",  "name": "Lips",  "blurb": "Colour that wears like skin — matte, balm and oil." },
+    { "slug": "eyes",  "name": "Eyes",  "blurb": "Brows, lashes and shadow built for depth, not glitter." },
+    { "slug": "face",  "name": "Face",  "blurb": "Skin tints, blush and bronzer in a full depth range." },
+    { "slug": "skin",  "name": "Skin",  "blurb": "The prep and the take-off. Makeup starts and ends here." }
+  ],
+  "products": [
+    {
+      "slug": "velvet-matte-lipstick",
+      "name": "Velvet Matte Lipstick",
+      "category": "lips",
+      "form": "lipstick",
+      "price": 28,
+      "badge": "Bestseller",
+      "featured": true,
+      "tagline": "A true matte that doesn't feel like one.",
+      "description": [
+        "Eight hours of colour with none of the tightness. A cushioned matte base carries pigment in a thin, even film, so lips stay comfortable long after the coffee has gone cold.",
+        "Built to layer: press one coat for a stained wash, or build two for full, saturated opacity."
+      ],
+      "details": [ "3.8 g / 0.13 oz", "Matte, non-drying finish", "Squalane and shea butter base", "Fragrance-free" ],
+      "shades": [
+        { "name": "Bare Linen", "hex": "#C48C7C" },
+        { "name": "Dusk Rose",  "hex": "#B26A66" },
+        { "name": "Terracotta", "hex": "#A65442" },
+        { "name": "Red Letter", "hex": "#9B2B27" },
+        { "name": "Cocoa",      "hex": "#7A4A3C" },
+        { "name": "Plum Ink",   "hex": "#5E2B36" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "glass-lip-oil",
+      "name": "Glass Lip Oil",
+      "category": "lips",
+      "form": "wand",
+      "price": 22,
+      "badge": "",
+      "featured": true,
+      "tagline": "High shine, zero stick.",
+      "description": [
+        "A weightless oil that reads like glass on camera and feels like nothing on the lips. Sheer colour with a treatment base that conditions as it wears.",
+        "Wear it alone for a fresh, everyday lip, or over the Velvet Matte to soften a hard edge."
+      ],
+      "details": [ "4.5 ml / 0.15 fl oz", "Sheer, glossy finish", "Jojoba and vitamin E", "Non-sticky formula" ],
+      "shades": [
+        { "name": "Clear",      "hex": "#EFE3DA" },
+        { "name": "Peach Fizz", "hex": "#DA9179" },
+        { "name": "Rosewater",  "hex": "#C97F80" },
+        { "name": "Mulberry",   "hex": "#8E4552" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "precision-lip-liner",
+      "name": "Precision Lip Liner",
+      "category": "lips",
+      "form": "pencil",
+      "price": 18,
+      "badge": "",
+      "featured": false,
+      "tagline": "A 1.5 mm tip that never needs sharpening.",
+      "description": [
+        "Fine enough to draw a real edge, creamy enough not to drag. Sets to a soft, budge-proof finish that keeps colour where you put it.",
+        "Shades are matched to the Velvet Matte range, so pairing takes no thought."
+      ],
+      "details": [ "0.3 g / 0.01 oz", "Retractable, no sharpener", "Waterproof once set", "Fragrance-free" ],
+      "shades": [
+        { "name": "Bare Linen", "hex": "#C48C7C" },
+        { "name": "Dusk Rose",  "hex": "#B26A66" },
+        { "name": "Terracotta", "hex": "#A65442" },
+        { "name": "Red Letter", "hex": "#9B2B27" },
+        { "name": "Cocoa",      "hex": "#7A4A3C" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "the-nine-palette",
+      "name": "The Nine Palette",
+      "category": "eyes",
+      "form": "palette",
+      "price": 46,
+      "badge": "New",
+      "featured": true,
+      "tagline": "Nine shades. One complete eye.",
+      "description": [
+        "Four mattes, three satins and two soft-focus shimmers, arranged so any three neighbouring pans make a finished look. No filler shades, no pan you'll never touch.",
+        "Milled fine enough to blend with a single brush, pigmented enough to hold a crease."
+      ],
+      "details": [ "9 × 1.2 g pans", "Matte, satin and shimmer", "Talc-free", "Refillable magnetic tin" ],
+      "shades": [
+        { "name": "Warm neutrals", "hex": "#C9A88C" },
+        { "name": "Cool taupes",   "hex": "#9C8B85" },
+        { "name": "Deep bronze",   "hex": "#6B4429" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "feather-brow-pencil",
+      "name": "Feather Brow Pencil",
+      "category": "eyes",
+      "form": "pencil",
+      "price": 20,
+      "badge": "",
+      "featured": false,
+      "tagline": "Draws hairs, not lines.",
+      "description": [
+        "An ultra-fine 1 mm tip with a waxy, dry-touch payoff that mimics individual hairs instead of blocking in shape. The spoolie end softens anything too deliberate.",
+        "Four shades that cover cool to warm without going orange."
+      ],
+      "details": [ "0.09 g / 0.003 oz", "1 mm tip, dual-ended spoolie", "Water-resistant", "Buildable, matte finish" ],
+      "shades": [
+        { "name": "Ash Blonde", "hex": "#A98F72" },
+        { "name": "Soft Brown", "hex": "#8B6A4F" },
+        { "name": "Deep Brown", "hex": "#5D4332" },
+        { "name": "Soft Black", "hex": "#332822" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "lift-and-length-mascara",
+      "name": "Lift & Length Mascara",
+      "category": "eyes",
+      "form": "mascara",
+      "price": 26,
+      "badge": "Bestseller",
+      "featured": true,
+      "tagline": "Separation first, drama second.",
+      "description": [
+        "A tapered fibre brush catches the inner corners and lifts from the root, building length coat by coat without a single clump.",
+        "Holds a curl through a long day and comes off with warm water — no scrubbing, no lash loss."
+      ],
+      "details": [ "9 ml / 0.30 fl oz", "Tubing formula", "Removes with warm water", "Ophthalmologist tested" ],
+      "shades": [
+        { "name": "True Black", "hex": "#1E1A17" },
+        { "name": "Soft Brown", "hex": "#4A3628" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "weightless-skin-tint",
+      "name": "Weightless Skin Tint SPF 30",
+      "category": "face",
+      "form": "bottle",
+      "price": 38,
+      "badge": "Bestseller",
+      "featured": true,
+      "tagline": "Twenty shades. Your skin, evened out.",
+      "description": [
+        "Sheer-to-medium coverage that sits in the skin rather than on it, with broad-spectrum SPF 30 built in. It photographs without flashback and never settles into texture.",
+        "Twenty shades across cool, neutral and warm undertones — matched properly, not approximately."
+      ],
+      "details": [ "30 ml / 1.0 fl oz", "SPF 30 broad spectrum", "Sheer to medium, natural finish", "Non-comedogenic" ],
+      "shades": [
+        { "name": "Porcelain", "hex": "#F0D9C6" },
+        { "name": "Ivory",     "hex": "#E8C9AF" },
+        { "name": "Sand",      "hex": "#D9B392" },
+        { "name": "Honey",     "hex": "#C79A70" },
+        { "name": "Amber",     "hex": "#B07E52" },
+        { "name": "Chestnut",  "hex": "#8E5F3B" },
+        { "name": "Cocoa",     "hex": "#6D452B" },
+        { "name": "Espresso",  "hex": "#4A2E1D" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "cloud-cream-blush",
+      "name": "Cloud Cream Blush",
+      "category": "face",
+      "form": "compact",
+      "price": 24,
+      "badge": "",
+      "featured": true,
+      "tagline": "Blends with a fingertip. Stays all day.",
+      "description": [
+        "A cream-to-powder blush that melts into skin tint without lifting it, leaving a soft flush that looks like circulation rather than product.",
+        "Works on bare skin too — press it on, tap the edges out, done."
+      ],
+      "details": [ "5 g / 0.17 oz", "Cream-to-powder finish", "Buildable, blendable", "Fragrance-free" ],
+      "shades": [
+        { "name": "Peach Blur", "hex": "#DB9A7C" },
+        { "name": "Soft Rose",  "hex": "#CE8285" },
+        { "name": "Poppy",      "hex": "#C05C4E" },
+        { "name": "Berry",      "hex": "#9C4A55" },
+        { "name": "Clay",       "hex": "#A96B54" },
+        { "name": "Mauve",      "hex": "#9A6B75" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "soft-focus-powder",
+      "name": "Soft Focus Setting Powder",
+      "category": "face",
+      "form": "compact",
+      "price": 32,
+      "badge": "",
+      "featured": false,
+      "tagline": "Sets without flattening.",
+      "description": [
+        "Finely milled to blur texture and hold makeup in place without the dry, powdery cast that shows up under flash.",
+        "Three tones so it disappears on fair, medium and deep skin alike."
+      ],
+      "details": [ "8 g / 0.28 oz", "Talc-free, finely milled", "No flashback", "Loose powder with sifter" ],
+      "shades": [
+        { "name": "Translucent Light", "hex": "#EFDDCB" },
+        { "name": "Translucent Medium","hex": "#D6B896" },
+        { "name": "Translucent Deep",  "hex": "#A9784F" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "sunlit-cream-bronzer",
+      "name": "Sunlit Cream Bronzer",
+      "category": "face",
+      "form": "compact",
+      "price": 30,
+      "badge": "",
+      "featured": false,
+      "tagline": "Warmth, not mud.",
+      "description": [
+        "A true neutral-warm bronzer with no orange pull, formulated to sit softly along the places light actually hits.",
+        "Cream texture means it moves with the face — no harsh edges to blend out."
+      ],
+      "details": [ "6 g / 0.21 oz", "Satin cream finish", "Buildable warmth", "Fragrance-free" ],
+      "shades": [
+        { "name": "Light",  "hex": "#C79A72" },
+        { "name": "Medium", "hex": "#AF7C52" },
+        { "name": "Tan",    "hex": "#8F5F3A" },
+        { "name": "Deep",   "hex": "#6B432A" }
+      ],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "prep-hydrating-primer",
+      "name": "Prep Hydrating Primer",
+      "category": "skin",
+      "form": "bottle",
+      "price": 34,
+      "badge": "",
+      "featured": false,
+      "tagline": "The step that makes everything else work.",
+      "description": [
+        "A hydrating gel primer that gives makeup something to hold onto. Skin drinks it in; product goes on smoother and stays put hours longer.",
+        "No silicone slip, no pilling under skin tint."
+      ],
+      "details": [ "30 ml / 1.0 fl oz", "Hyaluronic acid and glycerin", "Silicone-free", "Suits all skin types" ],
+      "shades": [],
+      "shopifyProductId": ""
+    },
+    {
+      "slug": "melt-cleansing-balm",
+      "name": "Melt Cleansing Balm",
+      "category": "skin",
+      "form": "jar",
+      "price": 30,
+      "badge": "New",
+      "featured": true,
+      "tagline": "Takes off everything, including the mascara.",
+      "description": [
+        "A solid balm that turns to oil on contact and rinses to milk with water. Dissolves long-wear makeup and SPF in one pass, without stripping the skin underneath.",
+        "Safe around the eyes, and gentle enough for every night."
+      ],
+      "details": [ "80 ml / 2.7 fl oz", "Balm-to-oil-to-milk", "Removes SPF and long-wear makeup", "Fragrance-free" ],
+      "shades": [],
+      "shopifyProductId": ""
+    }
+  ]
+}

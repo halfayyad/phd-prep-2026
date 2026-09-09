@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found — Cédrisse Beauty</title>
+<title>Page not found — Cédrisse</title>
 <meta name="description" content="That page could not be found.">
 <meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Page not found — Cédrisse">
+<meta property="og:description" content="That page could not be found.">
+<meta property="og:image" content="https://www.cedrisse.com/assets/img/og-cover.svg">
 <meta name="theme-color" content="#FBF8F5">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,18 +18,98 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announce">Free shipping on orders over $60 · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="brand__name">Cédrisse</span>
+      <span class="brand__tag">Cosmetics</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="shop.html">Shop all</a></li>
+        <li><a href="shop.html?c=lips">Lips</a></li>
+        <li><a href="shop.html?c=eyes">Eyes</a></li>
+        <li><a href="shop.html?c=face">Face</a></li>
+        <li><a href="shop.html?c=skin">Skin</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Help</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <a class="cart-btn" href="#" data-cart-toggle>Bag</a>
+    </div>
+  </div>
+</header>
+
 <main id="main" class="section cta-band page-404">
   <div class="wrap wrap--narrow">
     <span class="eyebrow">Error 404</span>
     <hr class="rule">
-    <h1>This page has been blotted away</h1>
-    <p class="lede">The link you followed doesn't exist any more — or never did. Let's get you back.</p>
+    <h1>This page has sold out of existence</h1>
+    <p class="lede">The link you followed doesn't exist any more — or never did.</p>
     <div class="btn-row">
-      <a class="btn" href="index.html">Back to home</a>
-      <a class="btn btn--ghost" href="contact.html#enquire">Contact</a>
+      <a class="btn" href="shop.html">Shop all products</a>
+      <a class="btn btn--ghost" href="index.html">Back to home</a>
     </div>
   </div>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__name">Cédrisse</span>
+          <span class="brand__tag">Cosmetics</span>
+        </a>
+        <p>Cosmetics made for real skin, in a full range of depths and undertones.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All products</a></li>
+          <li><a href="shop.html?c=lips">Lips</a></li>
+          <li><a href="shop.html?c=eyes">Eyes</a></li>
+          <li><a href="shop.html?c=face">Face</a></li>
+          <li><a href="shop.html?c=skin">Skin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">Shipping &amp; returns</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@cedrisse.com">hello@cedrisse.com</a></li>
+          <li><a href="https://instagram.com/" rel="me noopener">@cedrisse</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Cédrisse. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="https://instagram.com/" rel="me noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/" rel="me noopener">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/shopify-config.js"></script>
 <script src="js/main.js" defer></script>
+<script src="js/shopify.js" defer></script>
 </body>
 </html>

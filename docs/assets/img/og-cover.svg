@@ -1,16 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cedrisse Beauty">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cédrisse">
 <defs>
-<linearGradient id="g51a" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#F3EAE3"/><stop offset="1" stop-color="#D9C4B8"/></linearGradient>
-<radialGradient id="g51b" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBF6F1" stop-opacity="0.95"/><stop offset="1" stop-color="#FBF6F1" stop-opacity="0"/></radialGradient>
-<filter id="g51c" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="36.0"/></filter>
+<linearGradient id="sg" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#F4ECE4"/><stop offset="1" stop-color="#DFCCBA"/></linearGradient>
+<radialGradient id="sl" cx="0.5" cy="0.36" r="0.55"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+<filter id="ss" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
 </defs>
-<rect width="1200" height="630" fill="url(#g51a)"/>
-<path d="M 518.8 316.0 Q 518.8 316.0 491.1 365.3 Q 463.3 414.7 408.5 433.1 Q 353.6 451.5 316.1 409.3 Q 278.5 367.0 268.4 311.1 Q 258.4 255.2 310.0 235.5 Q 361.7 215.9 418.3 209.3 Q 474.8 202.8 496.8 259.4 Z" fill="#BE9E85" opacity="0.34" filter="url(#g51c)"/>
-<path d="M 533.6 338.1 Q 533.6 338.1 504.0 400.8 Q 474.4 463.5 405.3 484.7 Q 336.1 505.8 256.3 469.6 Q 176.5 433.4 199.3 349.1 Q 222.2 264.8 278.8 216.1 Q 335.4 167.4 426.4 163.1 Q 517.3 158.9 525.4 248.5 Z" fill="#FBF6F1" opacity="0.26" filter="url(#g51c)"/>
-<path d="M 1115.9 417.1 Q 1115.9 417.1 1102.9 477.9 Q 1090.0 538.7 1025.1 549.6 Q 960.3 560.5 907.5 522.0 Q 854.8 483.6 836.8 408.4 Q 818.8 333.2 888.9 300.6 Q 959.0 268.0 1018.0 289.9 Q 1076.9 311.9 1096.4 364.5 Z" fill="#BE9E85" opacity="0.31" filter="url(#g51c)"/>
-<ellipse cx="600" cy="265" rx="504" ry="227" fill="url(#g51b)"/>
-<path d="M 0 391 Q 600 328 1200 391" fill="none" stroke="#BE9E85" stroke-opacity="0.22" stroke-width="2.4"/>
-<path d="M 0 479 Q 600 416 1200 479" fill="none" stroke="#BE9E85" stroke-opacity="0.22" stroke-width="2.4"/>
-<text x="600" y="334" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="69" fill="#2E2823" fill-opacity="0.30" letter-spacing="12.5">CB</text>
-<text x="600" y="400" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="18" fill="#2E2823" fill-opacity="0.35" letter-spacing="7.6">CEDRISSE BEAUTY</text>
+<rect width="1200" height="630" fill="url(#sg)"/>
+<ellipse cx="600.0" cy="252.0" rx="576.0" ry="264.59999999999997" fill="url(#sl)"/>
+<ellipse cx="240" cy="466" rx="57" ry="26" fill="#8B6F55" opacity=".18" filter="url(#ss)"/>
+<g transform="translate(-360, 38) scale(0.52) translate(554, 291)">
+      <rect x="530.0" y="275.0" width="140" height="300" rx="10" fill="#C7A78C"/>
+      <rect x="542.0" y="65.0" width="116" height="215" rx="8" fill="#C7A78C" opacity=".72"/>
+      <path d="M 560.0 65.0 L 560.0 -35.0 Q 560.0 -55.0 590.0 -59.0
+               L 640.0 -45.0 L 640.0 65.0 Z" fill="#C7A78C"/></g>
+<ellipse cx="480" cy="466" rx="64" ry="26" fill="#8B6F55" opacity=".18" filter="url(#ss)"/>
+<g transform="translate(-120, 38) scale(0.58) translate(434, 228)">
+      <rect x="340.0" y="85.0" width="520" height="440" rx="16" fill="#C09490" opacity=".55"/>
+      <rect x="405.0" y="150.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.42"/><rect x="545.0" y="150.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.5"/><rect x="685.0" y="150.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.58"/><rect x="405.0" y="270.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.5"/><rect x="545.0" y="270.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.58"/><rect x="685.0" y="270.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.42"/><rect x="405.0" y="390.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.58"/><rect x="545.0" y="390.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.42"/><rect x="685.0" y="390.0" width="110" height="90" rx="6" fill="#C09490" opacity="0.5"/></g>
+<ellipse cx="720" cy="466" rx="70" ry="26" fill="#8B6F55" opacity=".18" filter="url(#ss)"/>
+<g transform="translate(120, 38) scale(0.64) translate(338, 177)">
+      <rect x="485.0" y="155.0" width="230" height="390" rx="26" fill="#B9A183"/>
+      <rect x="558.0" y="45.0" width="84" height="120" rx="10" fill="#B9A183" opacity=".72"/>
+      <rect x="538.0" y="-15.0" width="124" height="70" rx="14" fill="#B9A183"/>
+      <rect x="520.0" y="275.0" width="160" height="150" rx="8" fill="#FFFFFF" opacity=".22"/></g>
+<ellipse cx="960" cy="466" rx="57" ry="26" fill="#8B6F55" opacity=".18" filter="url(#ss)"/>
+<g transform="translate(360, 38) scale(0.52) translate(554, 291)">
+      <rect x="542.0" y="255.0" width="116" height="300" rx="14" fill="#BFA694"/>
+      <rect x="554.0" y="15.0" width="92" height="250" rx="12" fill="#BFA694" opacity=".72"/>
+      <rect x="580.0" y="-75.0" width="40" height="100" rx="10" fill="#BFA694"/></g>
+<text x="600.0" y="578" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="24" letter-spacing="8" fill="#2E2823" fill-opacity="0.34">CÉDRISSE</text>
 </svg>
