@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" role="img" aria-label="Studio">
+<defs>
+<linearGradient id="g33a" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#F3EAE3"/><stop offset="1" stop-color="#D9C4B8"/></linearGradient>
+<radialGradient id="g33b" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBF6F1" stop-opacity="0.95"/><stop offset="1" stop-color="#FBF6F1" stop-opacity="0"/></radialGradient>
+<filter id="g33c" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="33.0"/></filter>
+</defs>
+<rect width="900" height="1100" fill="url(#g33a)"/>
+<path d="M 818.0 651.8 Q 818.0 651.8 743.7 761.6 Q 669.4 871.3 546.0 918.3 Q 422.7 965.3 344.5 863.5 Q 266.3 761.6 288.7 662.6 Q 311.0 563.6 371.4 470.8 Q 431.8 378.1 539.4 419.3 Q 646.9 460.5 732.4 556.2 Z" fill="#BE9E85" opacity="0.24" filter="url(#g33c)"/>
+<path d="M 869.1 850.9 Q 869.1 850.9 786.6 950.3 Q 704.1 1049.6 598.9 1064.3 Q 493.6 1079.0 371.8 1036.1 Q 250.1 993.3 264.5 857.9 Q 279.0 722.5 379.2 641.3 Q 479.3 560.2 597.9 598.5 Q 716.4 636.8 792.8 743.9 Z" fill="#FBF6F1" opacity="0.22" filter="url(#g33c)"/>
+<path d="M 741.3 640.2 Q 741.3 640.2 713.8 728.5 Q 686.4 816.8 590.3 841.2 Q 494.1 865.7 409.7 806.0 Q 325.4 746.2 340.3 647.4 Q 355.3 548.5 431.7 512.1 Q 508.0 475.6 603.5 461.6 Q 699.1 447.7 720.2 544.0 Z" fill="#BE9E85" opacity="0.37" filter="url(#g33c)"/>
+<ellipse cx="450" cy="462" rx="378" ry="396" fill="url(#g33b)"/>
+<path d="M 0 682 Q 450 572 900 682" fill="none" stroke="#BE9E85" stroke-opacity="0.22" stroke-width="1.8"/>
+<path d="M 0 836 Q 450 726 900 836" fill="none" stroke="#BE9E85" stroke-opacity="0.22" stroke-width="1.8"/>
+<text x="450" y="583" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="99" fill="#2E2823" fill-opacity="0.30" letter-spacing="17.8">CB</text>
+<text x="450" y="677" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="25" fill="#2E2823" fill-opacity="0.35" letter-spacing="10.8">STUDIO</text>
+</svg>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; FAQ — Cédrisse Beauty</title>
+<meta name="description" content="Check your date with Cédrisse Beauty, and read the answers to the questions brides and clients ask most.">
+<link rel="canonical" href="https://cedrissebeauty.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact &amp; FAQ — Cédrisse Beauty">
+<meta property="og:description" content="Check your date and read the most common questions answered.">
+<meta property="og:image" content="assets/img/og-cover.svg">
+<meta name="theme-color" content="#FBF8F5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="brand__name">Cédrisse</span>
+      <span class="brand__tag">Beauty · Makeup Artistry</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="btn nav__cta" href="contact.html#enquire">Book a date</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap wrap--narrow">
+      <span class="eyebrow">Contact</span>
+      <hr class="rule rule--center">
+      <h1 class="title--sm">Let's check your date</h1>
+      <p class="lede">
+        Fill in the form below or reach out directly. Every enquiry is answered
+        personally within two business days.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= Enquiry ================= -->
+  <section class="section" id="enquire">
+    <div class="wrap split stack-top">
+      <div class="reveal">
+        <span class="eyebrow">Enquiry form</span>
+        <hr class="rule">
+        <h2>Tell me about the day</h2>
+        <p>The more detail you give here, the more accurate the quote I can send back.</p>
+
+        <!-- To receive submissions, set `action` to your form endpoint (e.g. Formspree),
+             set `method="post"`, and delete the data-demo attribute. See docs/README.md. -->
+        <form class="form" data-form data-demo="true" action="#" method="post" novalidate>
+          <p class="form-status" role="status" tabindex="-1" hidden></p>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="date">Date of the event *</label>
+              <input id="date" name="date" type="date" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="service">Service *</label>
+              <select id="service" name="service" required>
+                <option value="">Please choose…</option>
+                <option>Bridal makeup</option>
+                <option>Bridal party / guests</option>
+                <option>Event or evening glam</option>
+                <option>Editorial or photoshoot</option>
+                <option>Private makeup lesson</option>
+                <option>Something else</option>
+              </select>
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="people">How many faces?</label>
+              <input id="people" name="people" type="number" min="1" max="30" inputmode="numeric" placeholder="1">
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="location">Location or venue</label>
+            <input id="location" name="location" type="text" placeholder="City, venue or getting-ready address">
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell me more *</label>
+            <textarea id="message" name="message" rows="6" required
+              placeholder="Getting-ready time, photographer's call time, the look you have in mind, anything I should know about your skin."></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <!-- Honeypot: hidden from people, tempting to bots. -->
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company</label>
+            <input class="hp" id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="btn-row mt-sm">
+            <button class="btn" type="submit">Send enquiry</button>
+          </div>
+          <p class="form__note">
+            Your details are used only to answer this enquiry. Nothing is shared or added
+            to a mailing list.
+          </p>
+        </form>
+      </div>
+
+      <aside class="contact-panel reveal" data-delay="100">
+        <span class="eyebrow">Direct</span>
+        <hr class="rule">
+        <h2>Other ways to reach me</h2>
+        <ul class="detail-list">
+          <li>
+            <span>Email</span>
+            <a href="mailto:hello@cedrissebeauty.com">hello@cedrissebeauty.com</a>
+          </li>
+          <li>
+            <span>Phone &amp; WhatsApp</span>
+            <a href="tel:+15550182470">+1 (555) 018-2470</a>
+          </li>
+          <li>
+            <span>Instagram</span>
+            <a href="https://instagram.com/" rel="me noopener">@cedrissebeauty</a>
+          </li>
+          <li>
+            <span>Studio</span>
+            <strong>By appointment only</strong>
+          </li>
+          <li>
+            <span>Studio hours</span>
+            <strong>Tue – Sat, 9am – 6pm</strong>
+          </li>
+          <li>
+            <span>Service area</span>
+            <strong>City &amp; surrounds — travel on request</strong>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section section--tint" id="faq">
+    <div class="wrap wrap--narrow">
+      <div class="section-head center">
+        <span class="eyebrow">Good to know</span>
+        <hr class="rule">
+        <h2>Frequently asked</h2>
+      </div>
+
+      <div class="accordion" data-single="true">
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-1">
+              How far in advance should I book?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-1"><div>
+            <p>
+              For weddings, six to twelve months is typical — peak-season Saturdays go
+              first. Events and photoshoots usually need two to four weeks. If your date
+              is sooner than that, still ask: cancellations happen.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-2">
+              What secures my date?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-2"><div>
+            <p>
+              A signed agreement and a 30% retainer. Until both are in, the date stays
+              open to other enquiries. The balance is due one week before the event.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-3">
+              Do you travel to me?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-3"><div>
+            <p>
+              Yes. On-location service within the standard service area is included in
+              the quoted price. Beyond it, travel is quoted per kilometre, and overnight
+              accommodation may apply for very early call times far out of town.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-4">
+              How long does each application take?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-4"><div>
+            <p>
+              Roughly 75 minutes for the bride and 40 minutes for each additional person.
+              A written timeline is sent ahead of the day so the whole morning is mapped
+              against your photographer's schedule.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-5">
+              Is a trial necessary?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-5"><div>
+            <p>
+              For brides, yes — it's included in every package. A trial is where we test
+              wear time, photograph the look under real light, and settle the details so
+              the morning itself is purely execution. For events and lessons, it's optional.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-6">
+              I have sensitive skin or allergies — can you work around that?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-6"><div>
+            <p>
+              Absolutely. Tell me in your enquiry and we'll patch-test at the trial. The
+              kit includes fragrance-free, non-comedogenic and latex-free options, and
+              disposables are used throughout.
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-7">
+              Do you cover all skin tones?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-7"><div>
+            <p>
+              Yes — a full depth and undertone range is carried in every complexion line
+              in the kit, in both airbrush and traditional formulas. Nobody gets matched
+              "close enough".
+            </p>
+          </div></div>
+        </div>
+
+        <div class="accordion__item">
+          <h3 class="accordion__heading">
+            <button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-8">
+              What's the cancellation policy?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-8"><div>
+            <p>
+              Retainers are non-refundable, as the date is turned away from other
+              bookings. If you need to move the date, I'll transfer the retainer to a new
+              one wherever my calendar allows.
+            </p>
+          </div></div>
+        </div>
+
+      </div>
+
+      <p class="form__note center mt-lg">
+        Still have a question? <a href="mailto:hello@cedrissebeauty.com">Email me</a> — I answer everything myself.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__name">Cédrisse</span>
+          <span class="brand__tag">Beauty · Makeup Artistry</span>
+        </a>
+        <p>Bridal, event and editorial makeup artistry. Studio appointments and on-location service by arrangement.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html#packages">Packages</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@cedrissebeauty.com">hello@cedrissebeauty.com</a></li>
+          <li><a href="tel:+15550182470">+1 (555) 018-2470</a></li>
+          <li>Studio visits by appointment</li>
+          <li>Travel available on request</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Cédrisse Beauty. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="https://instagram.com/" rel="me noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/" rel="me noopener">TikTok</a></li>
+        <li><a href="https://www.pinterest.com/" rel="me noopener">Pinterest</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

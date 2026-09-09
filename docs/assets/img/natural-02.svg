@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Natural">
+<defs>
+<linearGradient id="g11a" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#F4ECE6"/><stop offset="1" stop-color="#E2CFC4"/></linearGradient>
+<radialGradient id="g11b" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FCF7F3" stop-opacity="0.95"/><stop offset="1" stop-color="#FCF7F3" stop-opacity="0"/></radialGradient>
+<filter id="g11c" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30.0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="url(#g11a)"/>
+<path d="M 674.9 541.8 Q 674.9 541.8 597.6 634.0 Q 520.3 726.1 414.8 774.4 Q 309.2 822.6 242.7 729.7 Q 176.2 636.8 163.5 535.7 Q 150.8 434.7 237.4 380.1 Q 324.0 325.5 427.9 334.3 Q 531.9 343.1 603.4 442.4 Z" fill="#C2A18C" opacity="0.27" filter="url(#g11c)"/>
+<path d="M 588.9 561.2 Q 588.9 561.2 539.4 614.8 Q 489.9 668.4 425.6 709.0 Q 361.4 749.7 311.3 689.9 Q 261.3 630.1 264.7 562.8 Q 268.0 495.5 317.5 446.3 Q 366.9 397.1 427.4 426.8 Q 487.8 456.6 538.3 508.9 Z" fill="#FCF7F3" opacity="0.28" filter="url(#g11c)"/>
+<path d="M 619.6 705.1 Q 619.6 705.1 596.1 767.7 Q 572.6 830.3 505.2 844.2 Q 437.8 858.0 382.1 816.8 Q 326.3 775.6 319.7 701.9 Q 313.2 628.2 374.4 585.6 Q 435.7 542.9 492.9 575.5 Q 550.1 608.1 584.8 656.6 Z" fill="#C2A18C" opacity="0.24" filter="url(#g11c)"/>
+<ellipse cx="400" cy="420" rx="336" ry="360" fill="url(#g11b)"/>
+<path d="M 0 620 Q 400 520 800 620" fill="none" stroke="#C2A18C" stroke-opacity="0.22" stroke-width="1.6"/>
+<path d="M 0 760 Q 400 660 800 760" fill="none" stroke="#C2A18C" stroke-opacity="0.22" stroke-width="1.6"/>
+<text x="400" y="530" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="88" fill="#2E2823" fill-opacity="0.30" letter-spacing="15.8">CB</text>
+<text x="400" y="614" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="22" fill="#2E2823" fill-opacity="0.35" letter-spacing="9.6">NATURAL</text>
+</svg>

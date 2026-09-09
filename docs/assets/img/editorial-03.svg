@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Editorial">
+<defs>
+<linearGradient id="g6a" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#EFE3D8"/><stop offset="1" stop-color="#DCC6B4"/></linearGradient>
+<radialGradient id="g6b" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F6EEE6" stop-opacity="0.95"/><stop offset="1" stop-color="#F6EEE6" stop-opacity="0"/></radialGradient>
+<filter id="g6c" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30.0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="url(#g6a)"/>
+<path d="M 741.8 725.4 Q 741.8 725.4 716.4 804.8 Q 690.9 884.2 608.3 889.4 Q 525.6 894.6 443.6 858.8 Q 361.6 823.0 376.1 732.4 Q 390.7 641.8 457.5 595.9 Q 524.2 550.0 617.0 546.4 Q 709.8 542.9 725.8 634.1 Z" fill="#C9A88C" opacity="0.23" filter="url(#g6c)"/>
+<path d="M 313.7 614.0 Q 313.7 614.0 279.1 691.9 Q 244.5 769.8 157.6 800.6 Q 70.6 831.5 15.6 761.1 Q -39.3 690.8 -39.4 614.0 Q -39.4 537.1 16.8 472.1 Q 73.1 407.2 156.7 435.2 Q 240.4 463.3 277.1 538.6 Z" fill="#F6EEE6" opacity="0.33" filter="url(#g6c)"/>
+<path d="M 534.2 689.1 Q 534.2 689.1 476.2 745.0 Q 418.2 800.9 350.3 846.7 Q 282.5 892.6 238.9 823.0 Q 195.3 753.5 186.9 685.1 Q 178.5 616.6 231.2 554.0 Q 283.9 491.5 355.7 528.5 Q 427.5 565.5 480.8 627.3 Z" fill="#C9A88C" opacity="0.34" filter="url(#g6c)"/>
+<ellipse cx="400" cy="420" rx="336" ry="360" fill="url(#g6b)"/>
+<path d="M 0 620 Q 400 520 800 620" fill="none" stroke="#C9A88C" stroke-opacity="0.22" stroke-width="1.6"/>
+<path d="M 0 760 Q 400 660 800 760" fill="none" stroke="#C9A88C" stroke-opacity="0.22" stroke-width="1.6"/>
+<text x="400" y="530" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="88" fill="#2E2823" fill-opacity="0.30" letter-spacing="15.8">CB</text>
+<text x="400" y="614" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="22" fill="#2E2823" fill-opacity="0.35" letter-spacing="9.6">EDITORIAL</text>
+</svg>
