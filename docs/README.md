@@ -34,9 +34,9 @@ Everything below is placeholder content. Search-and-replace across `docs/`.
 
 | What | Current placeholder | Where |
 |---|---|---|
-| Email | `hello@cedrissebeauty.com` | every page (footer, contact) |
+| Email | `hello@cedrisse.com` | every page (footer, contact) |
 | Phone | `+1 (555) 018-2470` / `+15550182470` | every page (footer, contact) |
-| Domain | `https://cedrissebeauty.com` | `<link rel="canonical">`, `sitemap.xml`, `robots.txt` |
+| Domain | `https://www.cedrisse.com` | `<link rel="canonical">`, `sitemap.xml`, `robots.txt` |
 | Social links | `https://instagram.com/`, TikTok, Pinterest | footer of every page, contact page |
 | Studio address, hours, service area | "By appointment only", "Tue – Sat, 9am – 6pm", "City & surrounds" | `contact.html` |
 | Prices | `$350` / `$650` / `$1,200` and per-service rates | `services.html` |

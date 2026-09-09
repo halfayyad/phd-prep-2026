@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cedrissebeauty.com/sitemap.xml
+Sitemap: https://www.cedrisse.com/sitemap.xml
